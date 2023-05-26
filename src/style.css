@@ -78,7 +78,9 @@ header {
  
 
 #logo img {
-  width: 25%;
+  width: 8rem;
+  position: relative;
+  left: 0.9rem;
 }
 
 #logo span{
@@ -136,7 +138,15 @@ footer {
   padding: 1rem;
   text-align: center;
   box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.5);
+  padding-bottom: 2rem;
 }
+
+
+.cotainer-foot-columns{
+  display: grid;
+  grid-template-rows: auto;
+}
+
 
 footer a {
   color: #fff;
@@ -159,12 +169,15 @@ footer ul {
 }
 
 footer img {
-  width: 8%;
+  width: 8rem;
   height: auto;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 /*--------------------------------Portada----------------------------*/
 #portada {
+  position: relative;
   background-image: url(images/fondo.jpg);
   background-position: center;
   background-size: cover;
@@ -209,13 +222,35 @@ button:hover {
   background-color: rgb(225, 91, 113);
 }
 
-.clip{
-  margin: 0 auto;
-  width: 15%;
-  height: 15%;
-  clip-path: circle(50% at left center);
-  background-color: blue;
-  padding: 0 auto;
+.clip-container {
+  position: absolute;
+  width: 120px; /* Ajusta el tamaño según tus necesidades */
+  height: 120px; /* Ajusta el tamaño según tus necesidades */
+  background-color: rgba(218, 43, 99, 1); /* Hace el clip semi-transparente */
+}
+
+.top-right {
+  top: 0;
+  right: 0;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+
+.bottom-left {
+  bottom: 0;
+  left: 0;
+  clip-path: polygon(0 0, 0 100%, 100% 100%);
+}
+
+.top-left {
+  top: 0;
+  left: 0;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.bottom-right {
+  bottom: 0;
+  right: 0;
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
 }
 /*--------------------------------Sitios.html-----------------------*/
 
@@ -380,12 +415,6 @@ dd {
     padding-left: 2rem;
   }
   
-  #logo img{
-    position: relative;
-    left: 1.5rem;
-  }
-
-
 
   header nav {
     padding-right: 2rem;
@@ -404,7 +433,21 @@ dd {
     gap: 1.2rem;
     list-style-type: none;
   }
-
+  
+  .cotainer-foot-columns{
+    grid-template-columns: repeat(4, 1fr) ;
+    margin: 0 auto;
+    width: 70%;
+    margin-top: 1rem;
+    margin-bottom: 1.9rem;
+    text-align: left;
+    gap: 1rem;
+  }
+  
+  .footer-column{
+    padding: 1rem;
+  }
+  
 
 
   #portada {
