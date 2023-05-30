@@ -120,7 +120,7 @@ header nav ul li a {
 main {
 
   background-color: rgb(255, 255, 255);
-  padding: 0 4rem 4rem 4rem;
+  padding: 0 1rem 4rem 1rem;
 }
 
 .sr {
@@ -178,8 +178,8 @@ footer img {
 /*--------------------------------Portada----------------------------*/
 #portada {
   position: relative;
-  background-image: url(images/fondo.jpg);
-  background-position: center;
+  background: url(images/fondo.jpg) no-repeat center;
+  
   background-size: cover;
   height: 80vh;
   width: auto;
@@ -260,16 +260,11 @@ button:hover {
 
 #boxCards2 {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
+  grid-template-rows: auto;
+  gap: 1rem;
   justify-items: center;
-}
-
-#boxCards2 .number {
-  color: rgb(240, 93, 80);
-  line-height: 3.5rem;
-  font-size: 2.1rem;
-  font-weight: 700;
+  padding: 0;
+  margin: 0;
 }
 
 
@@ -286,7 +281,7 @@ button:hover {
 
 .card {
   margin-top: 1rem;
-  max-width: 380px;
+  max-width: 100%;
   border-bottom: solid 1px rgba(33, 35, 38, 0.1);
   padding-bottom: 2rem;
 }
@@ -312,6 +307,24 @@ figure figcaption {
 
 }
 
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.imgDetalleBody {
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+} 
+
+.imageResponsive {
+  max-width: 100%;
+  height: auto;
+}
+
 .date {
 
   font-size: 16px;
@@ -323,6 +336,43 @@ figure figcaption {
 
 /*-----------------------------------Presentación-----------*/
 
+.figsvg{
+  width: 100%;
+  margin: 0 auto;
+}
+
+#brazo{
+  animation: animation--arman 3s infinite;
+}
+
+#fig1{
+  transform-origin: center center;
+  animation: animation--fig 3s infinite;
+}
+
+#fig2{
+  transform-origin: center center;
+  animation: animation--fig 4s  infinite;
+}
+
+#fig3{
+  transform-origin: center center;
+  animation: animation--fig 6s infinite;
+}
+
+
+
+@keyframes animation--arman{
+  25%{ transform: rotate(0deg) translateX(-1%);}
+  50%{ transform: rotate(1deg);}
+  75%{ transform: rotate(0deg) translateX(1%);}
+}
+
+@keyframes animation--fig{
+  0% { transform: scale(0);}
+  50% {transform: scale(1.1);}
+  100% {transform: scale(1);}
+}
 
 blockquote {
   color: rgb(0, 0, 0);
@@ -392,9 +442,9 @@ dd {
 @media all and (min-width: 820px) {
 
   main {
-    padding-top: 8rem;
     max-width: 1000px;
     margin: 0 auto;
+    padding: 8rem 4rem 4rem 4rem;
   }
 
   header {
@@ -493,14 +543,18 @@ dd {
 
   /*--------------------------Presentación__________*/
 
+  .figsvg{
+    width: 50%;
+  }
+  
   blockquote {
     margin: 2rem;
   }
 
-
-  figure {
-    padding-left: 8rem;
-    padding-right: 8rem;
-  }
+/*------------------------Detalle------------------*/
+.imgDetalleBody {
+  width: 65%;
+} 
+ 
 
 }

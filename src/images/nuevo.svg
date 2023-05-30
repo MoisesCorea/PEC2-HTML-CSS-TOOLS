@@ -12,6 +12,7 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
+
   <defs
      id="defs1193" />
   <sodipodi:namedview
@@ -36,7 +37,7 @@
   <g
      id="HTT 1">
     <g
-       id="tierra">
+       id="tierra" class="tierra">
       <g
          id="Clip path group">
         <mask
@@ -4355,4 +4356,6 @@
       </g>
     </g>
   </g>
+  
+
 </svg>

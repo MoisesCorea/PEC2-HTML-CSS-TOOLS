@@ -14,9 +14,8 @@
     <a class="sr" href="#main">Ir al contenido principal</a>
     <header>
         <div id="logo">
-            <a href="../index.html">
-                <img src="../images/logo.png" alt="" width="80">
-            </a>
+            <a href="../index.html"><img src="../images/log2.svg" alt="" width="80"></a>
+            <span>&copy;Honduras Travel</span>
         </div>
         <nav>
             <ul>
@@ -27,13 +26,17 @@
         </nav>
     </header>
     <main>
-        <section>
+        <article>
             <div class="titles">
                 <h2 class="center">Trujillo (Colón)</h2>
             </div>
             <figure>
                 <div id="imgDetalle">
-                    <img src="../images/imagen4.jpg" alt="">
+                    <picture>
+                        <source media="(max-width: 820px)" srcset="../images/imagen4/imagen4v2.jpeg" >
+                        <source media="(min-width: 821px)" srcset="../images/imagen4/imagen4.jpeg" >
+                        <img src="../images/imagen4/imagen4.jpeg" alt="Chris standing up holding his daughter Elva" >
+                    </picture>
                 </div>
                 <figcaption class="fontSize2">
                     Fuerte de Santa Bárbara, Trujillo.
@@ -47,6 +50,21 @@
                 construido en el siglo XVIII para proteger la ciudad de los ataques piratas. El fuerte ha sido
                 restaurado y es ahora un museo que muestra la historia y la cultura de la región. También hay un faro en
                 el lugar que ofrece vistas impresionantes del mar Caribe y la ciudad.</p>
+                <div class="centered-container">
+                    <picture class="imgDetalleBody">
+                      <img
+                        sizes="(max-width: 1040px) 100vw, 1040px"
+                        srcset="
+                          ../images/imagen4/imagen4_detalle/fortaleza-de-santa-barbara_bad68d_c_scale,w_300.jpg 300w,
+                          ../images/imagen4/imagen4_detalle/fortaleza-de-santa-barbara_bad68d_c_scale,w_680.jpg 680w,
+                          ../images/imagen4/imagen4_detalle/fortaleza-de-santa-barbara_bad68d_c_scale,w_924.jpg 924w,
+                          ../images/imagen4/imagen4_detalle/fortaleza-de-santa-barbara_bad68d_c_scale,w_1040.jpg 1040w"
+                        src="../images/imagen4/imagen4_detalle/fortaleza-de-santa-barbara_bad68d_c_scale,w_1040.jpg"
+                        alt=""
+                        class="imageResponsive"
+                      >
+                    </picture>
+                </div>    
             <p>Otra atracción turística importante en Colón es el Parque Nacional Capiro y Calentura, que es un bosque
                 tropical protegido. El parque cuenta con senderos para caminatas, cascadas, ríos y una gran variedad de
                 animales y plantas. Es un gran lugar para hacer turismo ecológico y experimentar la naturaleza de
@@ -67,29 +85,67 @@
                 <li>Ir al Centro de Entretenimiento y Diversión Marina del Sur, donde hay una variedad de juegos
                     mecánicos, restaurantes y tiendas.</li>
             </ul>
-        </section>
+            <div class="centered-container">
+                <picture class="imgDetalleBody">
+                  <img
+                    sizes="(max-width: 1040px) 100vw, 1040px"
+                    srcset="
+                      ../images/imagen4/imagen4_detalle/tranquility-bay-beach_hccas2_c_scale,w_300.jpg 300w,
+                      ../images/imagen4/imagen4_detalle/tranquility-bay-beach_hccas2_c_scale,w_675.jpg 675w,
+                      ../images/imagen4/imagen4_detalle/tranquility-bay-beach_hccas2_c_scale,w_915.jpg 915w,
+                      ../images/imagen4/imagen4_detalle/tranquility-bay-beach_hccas2_c_scale,w_1040.jpg 1040w"
+                    src="../images/imagen4/imagen4_detalle/tranquility-bay-beach_hccas2_c_scale,w_1040.jpg"
+                    alt=""
+                    class="imageResponsive"
+                  >
+                </picture>
+            </div>   
+        </article>
     </main>
     <footer>
         <div class="footer-container">
-            <div class="footer-column">
-                <h4>Contáctanos</h4>
-                <img src="../images/map-pin.svg" alt="">
-                <ul>
-                    <li><a href="#">Teléfono: 555-1234</a></li>
-                    <li><a href="#">Correo electrónico: info@turismo.hn</a></li>
-                    <li><a href="#">Dirección: Colonia Palmira, Tegucigalpa, Honduras</a></li>
-                </ul>
+            <img src="../images/footimg.svg" alt="">
+            <div class="cotainer-foot-columns">
+                <div class="footer-column">
+                    <h4>Sobre Honduras Travel</h4>
+                    <ul>
+                        <li><a href="../sitios.html">Lugares</a></li>
+                        <li><a href="../presentacion.html">Acerca de nostros</a></li>
+                        <li><a href="../fuentes.html">Fuentes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Lugares destacados</h4>
+                    <ul>
+                        <li><a href="detalle_utila.html">útila</a></li>
+                        <li><a href="detalle_roatan.html">Roatán</a></li>
+                        <li><a href="detalle_copanrui.html">Copán Ruinas</a></li>
+                        <li><a href="detalle_colon.html">Trujillo </a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contáctanos</h4>
+                    <ul>
+                        <li><a href="#">+504 555-1234</a></li>
+                        <li><a href="#">info@turismo.hn</a></li>
+                        <li><a href="#">Colonia Palmira, Tegucigalpa, Honduras</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Síguenos en redes sociales</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+
             </div>
-            <div class="footer-column">
-                <h4>Síguenos en redes sociales</h4>
-                <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Instagram</a></li>
-                </ul>
-            </div>
+            
         </div>
+        <p>Elaborado por Moises Enrique Corea Villanueva.</p>
         <p>&copy; 2023 Turismo en Honduras. Todos los derechos reservados.</p>
+
     </footer>
 </body>
 
